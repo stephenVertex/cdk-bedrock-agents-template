@@ -51,7 +51,7 @@ graph TD;
 
 ## Steps to get started
 
-1. Clone the repository
+### 1 - Clone the repository
 
 ``` shell
 git clone git@github.com:stephenVertex/cdk-lambda-bedrock-template.git
@@ -63,7 +63,7 @@ cd cdk-lambda-bedrock-template/
 CdkLambdaBedrockStack(app, "CdkLambdaBedrockStack", ## <-- Change this to your desired stack name
 ```
 
-2. Make a virtual environment. 
+### 2 - Make a virtual environment. 
 
 ``` shell
 python3 -m venv .venv
@@ -75,14 +75,16 @@ and install the dependencies
 pip3 install -r requirements.txt
 ```
 
-3. Make sure Docker is running. THe `docker ps` command should work.
+### 3 -  Make sure Docker is running. 
+
+The `docker ps` command should work.
 
 ``` shell
 ❯ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
-4. You need to add the following policy to your user.
+### 4 - Add a policy for cdk bootstrap
 
 ``` json
 {
@@ -107,8 +109,12 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 Note that `hnb659fds` is the default value of the all resources in the CDK "bootstrap stack."
 If you need to change this, you will know what to do.
 
-5. Run `./deploy`
+### 5 Deploy
+
+Run `./deploy.sh`.
+
 The deployment script makes sure that the API specifications are nice.
+
 ``` shell
 cd lambda
 python3 app.py > openapi.json
@@ -132,3 +138,7 @@ cdk deploy
  * `cdk docs`        open CDK documentation
 
 Enjoy!
+
+# Acknowledgements
+
+Huge thank you to [Darko Mesaroš](https://x.com/darkosubotica) for helping me wrap my brain around CDK.
