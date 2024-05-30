@@ -1,5 +1,13 @@
 
-# Welcome to your CDK and Bedrock Agents Project
+# Welcome to the Powertools + CDK + Bedrock Agents Template
+
+This project contains a template for using AWS Powertools and CDK to deploy lambda-powered Bedrock Agents.
+Each of these things, CDK, Powertools, Lambda, and Bedrock, are awesome and powerful.
+This template shows you how to use them all together.
+
+Comments, suggestions, pull requests, are very welcome.
+
+Author: [Stephen J. Barr (@stevejb on X)](https://x.com/stevejb).
 
 ## Layout
 
