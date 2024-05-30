@@ -65,7 +65,7 @@ graph TD;
 git clone git@github.com:stephenVertex/cdk-lambda-bedrock-template.git
 cd cdk-lambda-bedrock-template/
 ```
-**NOTE:** Make sure that you change the stack name.
+**NOTE:** Make sure that you change the stack name in `app.py`.
 
 ``` python
 CdkLambdaBedrockStack(app, "CdkLambdaBedrockStack", ## <-- Change this to your desired stack name
