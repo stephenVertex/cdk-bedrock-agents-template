@@ -139,6 +139,11 @@ cdk deploy
 
 Enjoy!
 
+# Resources
+
+The [Agents for Bedrock page on AWS Powertools](https://docs.powertools.aws.dev/lambda/python/latest/core/event_handler/bedrock_agents/)
+contains much of this same information. I have just made it into one deployable template.
+
 # Acknowledgements
 
 Huge thank you to [Darko Mesaroš](https://x.com/darkosubotica) for helping me wrap my brain around CDK.
